@@ -3,9 +3,9 @@
     <div class="col-xs-12">
         <p>add a new server or blueprint</p>
         <label for="">server name</label>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" [(ngModel)]="newServerName">
         <label for="">server content</label>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" [(ngModel)]="newServerContent">
         <br><br>
         <button 
             class="btn btn-primary"
