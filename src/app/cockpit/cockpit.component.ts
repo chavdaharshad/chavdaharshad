@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
+
 @Component({
   selector: 'app-cockpit',
   templateUrl: './cockpit.component.html',
@@ -8,9 +9,10 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class CockpitComponent implements OnInit {
   @Output() serverCreated=new EventEmitter<{serverName: string,serverContent: string}>();
   @Output() blueprintCreated=new EventEmitter<{serverName: string,serverContent: string}>();
-  newServerName = '';
+  newServerName = 'string';
   newServerContent = '';
-  constructor() { }
+
+  constructor() {   }
 
   ngOnInit(): void {
   }
