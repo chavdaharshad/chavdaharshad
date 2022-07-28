@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ServerComponent implements OnInit {
 
   @Input('serElement') element = { type: 'string', name: 'string', content: 'string'};
-
+  
   constructor() {
     
    }
