@@ -10,13 +10,14 @@ export class AppComponent {
   constructor(){
   }
   onServerAdded(serverData: {serverName: string,serverContent: string}){
-    console.log(serverData);
+    // console.log(serverData);
     this.serverElements.push({
       type:'server',
       name: serverData.serverName,
       content: serverData.serverContent
     });
   }
+  
   onBlueprintAdded(blueprintData: {serverName: string,serverContent: string}){
     this.serverElements.push({
       type:'blueprint',
