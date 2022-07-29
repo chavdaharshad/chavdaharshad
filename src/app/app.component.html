@@ -6,8 +6,14 @@
   </app-cockpit>
   <div class="row">
     <div class="col-xs-12">
+      <div class="btn btn-primary" (click)="onChangeFirst()">
+        change first element
+      </div>
       <app-server *ngFor="let serverElement of serverElements"
-      [serElement]="serverElement"></app-server>
+        [serElement]="serverElement"
+        [name]="serverElement.name"
+      >
+      </app-server>
 
       
     </div>
