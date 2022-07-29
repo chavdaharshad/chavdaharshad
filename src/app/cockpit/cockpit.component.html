@@ -5,17 +5,17 @@
         <label for="">server name</label>
         <input type="text" class="form-control" placeholder="servername" #serverInputName>
         <label for="">server content</label>
-        <input type="text" class="form-control" placeholder="server Content" #sereverInputContent>
+        <input type="text" class="form-control" placeholder="server Content" #serverInputContent>
         <br><br>
         <button 
             class="btn btn-primary"
-            (click)="onAddServer(serverInputName)"
+            (click)="onAddServer(serverInputName,serverInputContent)"
         >
             Add server
         </button>
         <button
             class="btn btn-primary"
-            (click)="onAddBlueprint(sereverInputContent)"
+            (click)="onAddBlueprint(serverInputName,serverInputContent)"
         >
             add server blueprint
         </button>
