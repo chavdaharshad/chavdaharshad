@@ -26,6 +26,7 @@ export class AppComponent {
     });
   }
   console.log('Abc');
+  console.log('Test');
   onChangeFirst(){
     this.serverElements[0].name
   }
