@@ -25,6 +25,7 @@ export class AppComponent {
       content: blueprintData.serverContent
     });
   }
+  console.log('Test');
   onChangeFirst(){
     this.serverElements[0].name
   }
